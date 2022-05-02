@@ -37,3 +37,17 @@ window.addEventListener("load",() =>{
     dayNight.querySelector("i").classList.add("fa-moon");
   }
 })
+function focushere(a) {
+
+  lnav=document.querySelectorAll(".aside ul.nav a");
+  console.log(lnav[a]);
+  len=lnav.length;
+
+  for(i=0;i<len;i++){
+    console.log(lnav[i].classList);
+    if(lnav[i].classList.length!=0){
+      lnav[i].classList= "";
+    }
+  }
+  lnav[a].setAttribute("class","active");;
+}

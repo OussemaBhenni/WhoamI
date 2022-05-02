@@ -654,11 +654,13 @@ h3.my-profession
   }
 }
 @media(max-width:991px){
-  .home .home-info{
+  .home .home-info,
+  .home .home-img{
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .home .home-img{
+  .home .home-img::after,
+  .home .home-img::before{
     display: none;
   }
   .service .service-item,
@@ -685,7 +687,9 @@ h3.my-profession
   .service .service-item,
   .portfolio .portfolio-item,
   .contact .contact-info-item,
-  .contact .contact-form .col-6{
+  .contact .contact-form .col-6
+  
+  {
     flex: 0 0 100%;
     max-width: 100%;
   }
